@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="Cricket.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bat Ball Stump Game</h1>
+
+    <div class="choices">
+      <button class="Choice-button" onclick="handleUserChoice('Bat')">
+        <img src="IMAGES/bat.png" alt="Bat Image" class="Choice-image">
+      </button>
+      <button class="Choice-button" onclick="handleUserChoice('Ball')">
+        <img src="IMAGES/ball.png" alt="Ball Image" class="Choice-image">
+      </button>
+      <button class="Choice-button" onclick="handleUserChoice('Stump')">
+        <img src="IMAGES/stump.png" alt="Stump Image" class="Choice-image">
+      </button>
+    </div>
+
+    <div class="results">
+      <h3 id="user-move"></h3>
+      <h3 id="computer-move"></h3>
+      <h3 id="result"></h3>
+      <h3 id="score"></h3>
+    </div>
+
+    <button class="reset" onclick="resetGame()">Reset</button>
+
+    <div class="two-player-mode">
+      <h2>Two Player Mode</h2>
+      <button class="player-button" onclick="startTwoPlayerMode()">Start Two Player Game</button>
+      <div id="two-player-results">
+        <h3 id="player1-move"></h3>
+        <h3 id="player2-move"></h3>
+        <h3 id="two-player-result"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="game1.js"></script>
+</body>
+</html>
